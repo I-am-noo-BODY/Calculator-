@@ -5,5 +5,68 @@ body {
     height: 100vh;
     background: #f0f0f0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-/* Add the rest of the CSS from earlier */
+
+.calculator {
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+}
+
+#display {
+    width: calc(100% - 10px);
+    height: 50px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-align: right;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #eee;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #555;
+    color: white;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #777;
+}
+
+.equals {
+    background: #f39c12;
+    grid-column: span 4;
+}
+
+.equals:hover {
+    background: #e67e22;
+}
+
+/* Game styles */
+.game {
+    text-align: center;
+    color: #333;
+}
+
+#gameCanvas {
+    background: #eee;
+    border: 2px solid #333;
+    margin-top: 20px;
+}
